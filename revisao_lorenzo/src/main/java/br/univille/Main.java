@@ -4,10 +4,12 @@ public class Main {
     public static void main(String[] args) {
         // System.out.println("Carlos");
 
-        Cliente carlos1 = new Cliente();
-        carlos1.setNome("Carlos 1");
-        Cliente carlos2 = new Cliente();
-        carlos2.setNome("Carlos 2");
+        Cliente carlos = new Cliente("carluxo");
+        Cliente lolo = new Cliente("lorenzo");
 
+        System.out.println(carlos.getNome() + " " + lolo.getNome());
+        System.out.println(carlos.toString());
+        System.out.println(lolo.hashCode());
+        System.out.println(carlos.getNome().equals(lolo.getNome()));
     }
 }
